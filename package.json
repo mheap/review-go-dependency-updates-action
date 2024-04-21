@@ -1,0 +1,24 @@
+{
+  "name": "go-review-dependency-updates-action",
+  "version": "1.0.0",
+  "description": "Set the PR description to contain all release notes for updated libraries",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx @vercel/ncc build && npx convert-action"
+  },
+  "keywords": [],
+  "author": "Michael Heap <m@michaelheap.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^5.1.1",
+    "semver": "^7.6.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-when": "^3.6.0",
+    "mocked-env": "^1.3.5",
+    "nock": "^13.5.4"
+  }
+}
